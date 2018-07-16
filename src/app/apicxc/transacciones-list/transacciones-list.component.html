@@ -1,148 +1,148 @@
-
 <br>
 <br>
 <br>
 <div class="design">
-       <div class="card">
-          <div class="header">
-              <h4><strong style='padding-left: 20em'>Listado de transacciones</strong> </h4>
-          </div>
-          <div class="body">
-              <div class="table-responsive">
-                  <table class="table table-hover m-b-0 c_list">
-                      <thead style='padding-left: 20em'>
-                          <tr>
-                              <th width="320">Detalle del Documento</th>
-                              <th >Fecha</th>
-                              <th >Cliente</th>
-                              <th >Monto</th>
-                              <th style="width: 100px;">Action</th>
-                          </tr>
-                      </thead>
-                          <tbody>
-                          <tr>
-                              <td >Esta transacción fue pagada</td>
-                              <td >
+    <div class="card">
+        <div class="header">
+            <h4><strong style='padding-left: 20em'>Listado de transacciones</strong> </h4>
+        </div>
+        <div class="body">
+            <div class="table-responsive">
+                <table class="table table-hover m-b-0 c_list">
+                    <thead style='padding-left: 20em'>
+                        <tr>
+                            <th>Tipo de Movimiento</th>
+                            <th>Detalle del Documento</th>
+                            <th>Fecha</th>
+                            <th>Cliente</th>
+                            <th>Monto</th>
+                            <th style="width: 100px;"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>DB</td>
+                            <td>Esta transacción fue pagada</td>
+                            <td>
                                 15/05/2018
-                              </td>
-                              <td >
+                            </td>
+                            <td>
                                 Bladimir
-                              </td>
-                              <td >
-                                 $15000
-                              </td>
-                              <td>
-                                  <button type="button" class="btn btn-success btn-sm"   data-toggle="modal" data-target="#cxc" data-whatever="@mdo">
+                            </td>
+                            <td>
+                                $15000
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#cxc" data-whatever="@mdo">
                                       <i class="zmdi zmdi-assignment"></i>
                                   </button>
-                                  <button type="button" class="btn btn-info btn-sm" title="Edit"><i class="zmdi zmdi-edit"></i></button>
-                                  <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert btn-sm" title="Delete"><i class="zmdi zmdi-delete"></i></button>
-                              </td>
-                          </tr>
-                          <tr>
-                              <td >Esta transacción no ha sido facturada</td>
-                              <td >
+                                <button type="button" class="btn btn-info btn-sm" title="Edit"><i class="zmdi zmdi-edit"></i></button>
+                                <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert btn-sm" title="Delete"><i class="zmdi zmdi-delete"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>CR</td>
+                            <td>Esta transacción no ha sido facturada</td>
+                            <td>
                                 20/05/2018
-                              </td>
-                              <td >
+                            </td>
+                            <td>
                                 Raimy
-                              </td>
-                              <td >
-                                 $25000
-                              </td>
-                              <td>
-                                  <button type="button" class="btn btn-success btn-sm"   data-toggle="modal" data-target="#cxc" data-whatever="@mdo">
+                            </td>
+                            <td>
+                                $25000
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#cxc" data-whatever="@mdo">
                                       <i class="zmdi zmdi-assignment"></i>
                                   </button>
-                                  <button type="button" class="btn btn-info btn-sm" title="Edit"><i class="zmdi zmdi-edit"></i></button>
-                                  <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert btn-sm" title="Delete"><i class="zmdi zmdi-delete"></i></button>
+                                <button type="button" class="btn btn-info btn-sm" title="Edit"><i class="zmdi zmdi-edit"></i></button>
+                                <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert btn-sm" title="Delete"><i class="zmdi zmdi-delete"></i></button>
 
-                              </td>
-                          </tr>
-                      </tbody>
-                  </table>
-              </div>
-          </div>
-      </div>
-       </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
 
 <!-- Modal -->
 <div class="modal fade" id="cxc" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Asiento Contable</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Asiento Contable</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-      </div>
-      <div class="modal-body">
-        <form>
-            <div class="row clearfix">
-                <div class="col-sm-12">
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label"><b>Descripción</b></label>
-                        <input type="text" class="form-control" placeholder="Descripción">
-                    </div>
-                </div>
             </div>
-          <fieldset>
-              <div class="row clearfix">
-                  <div class="col-sm-12">
-                      <div class="form-group">
-                          <label for="IDCliente"  class="col-sm-2 control-label"><b>Cliente</b> </label>
-                          <select class="form-control" id="IDCliente">
+            <div class="modal-body">
+                <form>
+                    <div class="row clearfix">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label"><b>Descripción</b></label>
+                                <input type="text" class="form-control" placeholder="Descripción">
+                            </div>
+                        </div>
+                    </div>
+                    <fieldset>
+                        <div class="row clearfix">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label for="IDCliente" class="col-sm-2 control-label"><b>Cliente</b> </label>
+                                    <select class="form-control" id="IDCliente">
                              <option>Seleccionar un cliente</option>
                               <option>1</option>
                               <option>2</option>
                               <option>3</option>
                             </select>
-                      </div>
-                  </div>
-              </div>
+                                </div>
+                            </div>
+                        </div>
 
-        </fieldset>
-        <div class="row clearfix">
-            <div class="col-sm-12">
-                <div class="form-group">
-                    <label class="col-sm-2 control-label"><b>Cuenta</b></label>
-                    <input type="text" class="form-control" placeholder="Cuenta">
-                </div>
+                    </fieldset>
+                    <div class="row clearfix">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label"><b>Cuenta</b></label>
+                                <input type="text" class="form-control" placeholder="Cuenta">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label"><b>Movimiento</b></label>
+                                <input type="text" class="form-control" placeholder="Movimiento">
+                            </div>
+                        </div>
+                    </div>
+                    <div> <b style='padding-left: 1em'>Fecha</b>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="zmdi zmdi-calendar"></i> </span>
+                            <input type="text" class="form-control date" placeholder="Ex: 30/07/2016">
+                        </div>
+                    </div>
+
+                    <div> <b style='padding-left: 1em'>Monto</b>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="zmdi zmdi-money"></i></span>
+                            <input type="text" class="form-control money-dollar" placeholder="Ex: 99,99 $">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-raised btn-success btn-round "><i class="fa fa-floppy-o" aria-hidden="true"></i> Guardar</button>
+                <button type="button" class="btn btn-raised btn-danger btn-round "><i class="fa fa-sign-out" aria-hidden="true"></i> Salir</button>
             </div>
         </div>
-        <div class="row clearfix">
-            <div class="col-sm-12">
-                <div class="form-group">
-                    <label class="col-sm-2 control-label"><b>Movimiento</b></label>
-                    <input type="text" class="form-control" placeholder="Movimiento">
-                </div>
-            </div>
-        </div>
-        <div> <b style='padding-left: 1em'>Fecha</b>
-          <div class="input-group">
-              <span class="input-group-addon"><i class="zmdi zmdi-calendar"></i> </span>
-              <input type="text" class="form-control date" placeholder="Ex: 30/07/2016">
-          </div>
-      </div>
-
-      <div> <b style='padding-left: 1em'>Monto</b>
-        <div class="input-group">
-            <span class="input-group-addon"><i class="zmdi zmdi-money"></i></span>
-            <input type="text" class="form-control money-dollar" placeholder="Ex: 99,99 $">
-        </div>
     </div>
-
-        </form>
-      </div>
-      <div class="modal-footer">
-          <button type="button" class="btn btn-raised btn-success btn-round "><i class="fa fa-floppy-o" aria-hidden="true"></i> Guardar</button>
-          <button type="button" class="btn btn-raised btn-danger btn-round "><i class="fa fa-sign-out" aria-hidden="true"></i> Salir</button>
-      </div>
-    </div>
-  </div>
 </div>
-
-

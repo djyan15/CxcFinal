@@ -4,10 +4,10 @@
         <div class="container">
             <div class="navbar-translate n_logo">
                 <a class="navbar-brand ">
-                  <div class="center" style='padding-left: 15em'>
+                    <div class="center" style='padding-left: 15em'>
 
-                   <b style="color:rgb(11, 148, 34)"> </b>
-                  </div>
+                        <b style="color:rgb(11, 148, 34)"> </b>
+                    </div>
                 </a>
                 <button class="navbar-toggler" type="button">
                     <!-- <span class="navbar-toggler-bar bar1"></span>
@@ -22,31 +22,31 @@
         </div>
     </nav>
     <!-- End Navbar -->
-    <div class="page-header"  style="background-image:url(assets/img/cxc.jpg)">
+    <div class="page-header" style="background-image:url(assets/img/cxc.jpg)">
         <div class="container">
             <div class="col-md-12 content-center">
                 <div class="card-plain">
-                    <form class="form">
-                        <div class="header" >
+                    <form class="form" [formGroup]="loginForm">
+                        <div class="header">
                             <div class="logo-container expandUp">
-                                <img src="/assets/logo.png" alt="" >
+                                <img src="/assets/logo.png" alt="">
                             </div>
                             <h5>Log in</h5>
                         </div>
                         <div class="content">
                             <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Enter User Name">
+                                <input formControlName="user" type="text" class="form-control" placeholder="Enter User Name">
                                 <span class="input-group-addon">
                                     <i class="zmdi zmdi-account-circle"></i>
                                 </span>
                             </div>
                             <div class="input-group">
-                                <input type="password" placeholder="Password" class="form-control" />
+                                <input formControlName="pass" type="password" placeholder="Password" class="form-control" />
                                 <span class="input-group-addon"><i class="zmdi zmdi-lock"></i></span>
                             </div>
                         </div>
                         <div class="footer">
-                            <a  class="btn btn-success btn-round btn-lg btn-block "[routerLink]="['/dashboard']">SIGN IN</a>
+                            <a class="btn btn-success btn-round btn-lg btn-block " (click)="login(loginForm)">SIGN IN</a>
                             <h5><a class="link">Forgot Password?</a></h5>
                         </div>
                     </form>
