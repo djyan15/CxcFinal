@@ -4,3 +4,43 @@
   justify-content: center;
   margin-left: 828px;
 }
+
+.form-control {
+  background-color: transparent;
+  border: 1px solid #E3E3E3;
+  border-radius: 30px;
+  color: #2c2c2c;
+  line-height: normal;
+  font-size: .8571em;
+  -webkit-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.center {
+  text-align: center;
+}
+
+/* Clases modificadas de Boostrap*/
+.navbar-brand
+{
+  margin: 15px auto;
+}
+/* Fin Clases modificadas de Boostrap*/
+
+/*******************
+sidebar navigation
+******************/
+.scroll-sidebar {
+  height: calc(100% - 70px); }
+  .scroll-sidebar.ps .ps__scrollbar-y-rail {
+    left: 2px;
+    right: auto;
+    background: none;
+    width: 6px;
+    /* If using `left`, there shouldn't be a `right`. */ }
+
+/* Bolder */
+
+.Bolder{
+  border: 1px solid #E3E3E3;
+}
+

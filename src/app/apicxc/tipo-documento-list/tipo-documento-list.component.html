@@ -1,91 +1,73 @@
-<div class="content">
-    <div class="container-fluid">
-       <div class="row">
-            <div class="col-md-12">
-                <div class="card data-tables">
-                    <div class="card-body table-striped table-no-bordered table-hover dataTable dtr-inline table-full-width">
-                        <div class="toolbar">
-                            <!--       Aquí puede escribir botones / acciones adicionales para la barra de herramientas              -->
-                        </div>
-                        <div class="fresh-datatables">
-                            <div id="datatables_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4"><div class="row"><div class="col-sm-12 col-md-6"><div class="dataTables_length" id="datatables_length">
-                              <label>Show <select name="datatables_length" aria-controls="datatables" class="form-control form-control-sm"><option value="10">10
-                              </option><option value="25">25</option><option value="50">50</option><option value="-1">All</option></select> entries</label></div></div>
-                              <div class="col-sm-12 col-md-6"><div id="datatables_filter" class="dataTables_filter">
-                                <label><input type="search" class="form-control form-control-sm" placeholder="Buscar" aria-controls="datatables"></label></div></div></div><div class="row"><div class="col-sm-12">
-                                  <table id="datatables" class="table table-striped table-no-bordered table-hover dataTable dtr-inline" cellspacing="0" width="100%" style="width: 100%;" role="grid" aria-describedby="datatables_info">
-                                <thead>
-                                    <tr role="row">
-                                      <th  rowspan="1" colspan="1" style="width: 250px; text-align: center;">Descripción</th>
-                                      <th></th>
-                                      <th></th>
-                                      <th></th>
-                                      <th></th>
-                                      <th></th>
-                                      <th></th>
-                                      <th></th>
-                                      <th></th>
-                                      <th rowspan="1" colspan="1" style="width: 250px;  text-align: center;">Cuenta Contable</th>
-                                    </tr>
-                                </thead>
-                                <!-- <tfoot>
-                                    <tr>
-                                      <th  rowspan="1" colspan="1" style="width: 173px;" >Descrpción</th>
-                                      <th  rowspan="1" colspan="1" style="width: 254px;">Cuenta Contable</th>
-                                </tfoot> -->
-                                <tbody>
+<br>
+<br>
+<br>
+<div class="design">
+       <div class="card">
+          <div class="header">
+              <h4><strong style='padding-left: 20em'>Listado Tipo de Documentos</strong> </h4>
+          </div>
+          <div class="body">
+              <div class="table-responsive">
+                  <table class="table table-hover m-b-0 c_list">
+                      <thead style='padding-left: 20em'>
+                          <tr>
+                              <th width="320">Descripción</th>
+                              <th style='padding-left: 20em'>Cuenta Contable</th>
+
+                              <th style="width: 100px;">Action</th>
+                          </tr>
+                      </thead>
+                          <tbody>
+                          <tr>
+                              <td >Bladimir debe un millon</td>
+                              <td style='padding-left: 20em'>
+                                456987123
+                              </td>
+
+                              <td>
+                                  <button type="button" class="btn btn-info btn-sm" title="Edit"><i class="zmdi zmdi-edit"></i></button>
+                                  <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert btn-sm" title="Delete"><i class="zmdi zmdi-delete"></i></button>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td >Por favor pasar a pagar Sr.Bladimir</td>
+                              <td style='padding-left: 20em'>
+                                456987123
+                              </td>
+
+                              <td>
+                                  <button type="button" class="btn btn-info btn-sm" title="Edit"><i class="zmdi zmdi-edit"></i></button>
+                                  <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert btn-sm" title="Delete"><i class="zmdi zmdi-delete"></i></button>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td >Sr.Bladimir usted va a caer en cicla</td>
+                              <td style='padding-left: 20em'>
+                                456987123
+                              </td>
+
+                              <td>
+                                  <button type="button" class="btn btn-info btn-sm" title="Edit"><i class="zmdi zmdi-edit"></i></button>
+                                  <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert btn-sm" title="Delete"><i class="zmdi zmdi-delete"></i></button>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td >Ultimo aviso Sr.Bladimir</td>
+                              <td style='padding-left: 20em'>
+                                  456987123
+                              </td>
+
+                              <td>
+                                  <button type="button" class="btn btn-info btn-sm" title="Edit"><i class="zmdi zmdi-edit"></i></button>
+                                  <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert btn-sm" title="Delete"><i class="zmdi zmdi-delete"></i></button>
+                              </td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+      </div>
+       </div>
 
 
-
-
-                                <tr role="row" class="odd">
-                                        <td tabindex="0" style=" text-align: center;">Esta transaccion ya fue pagada</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td style=" text-align: center;">123456789</td>
-                                        <td class="text-right">
-                                          <a class="btn btn-link btn-success edit" href="">
-                                            <i class="fa fa-edit" style="color:rgb(9, 187, 48);  text-align: center;"></i></a>
-                                            <a href="#" class="btn btn-link btn-danger remove">
-                                                <i class="fa fa-trash" aria-hidden="true" style="color:rgb(187, 9, 9);  text-align: center;"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <!-- <tr role="row" class="even">
-                                        <td class="sorting_1" tabindex="0">Bernarda Leyba</td>
-                                        <td>40214577757</td>
-                                        <td>$20,000</td>
-                                        <td>Activo</td>
-                                        <td>2009/10/09</td>
-                                        <td class="text-right">
-                                            <a class="btn btn-link btn-success edit" href="">
-                                              <i class="fa fa-edit" style="color:rgb(9, 187, 48)"></i></a>
-                                              <a href="#" class="btn btn-link btn-danger remove">
-                                               <i class="fa fa-trash" aria-hidden="true" style="color:rgb(187, 9, 9)"></i>
-                                              </a>
-                                          </td>
-                                    </tr> -->
-                                  </tbody>
-                            </table>
-                          </div></div>
-                          <div class="row"><div class="col-sm-12 col-md-5"><div class="dataTables_info" id="datatables_info" role="status" aria-live="polite">Showing 1 to 5 of 10 entries</div></div>
-                          <div class="col-sm-12 col-md-7"><div class="dataTables_paginate paging_full_numbers" id="datatables_paginate"><ul class="pagination"><li class="paginate_button page-item first disabled" id="datatables_first"><a href="#" aria-controls="datatables" data-dt-idx="0" tabindex="0" class="page-link">First</a></li>
-                            <li class="paginate_button page-item previous disabled" id="datatables_previous"><a href="#" aria-controls="datatables" data-dt-idx="1" tabindex="0" class="page-link">Previous</a></li>
-                            <li class="paginate_button page-item active"><a href="#" aria-controls="datatables" data-dt-idx="2" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item ">
-                              <a href="#" aria-controls="datatables" data-dt-idx="3" tabindex="0" class="page-link">2</a></li><li class="paginate_button page-item "><a href="#" aria-controls="datatables" data-dt-idx="4" tabindex="0" class="page-link">3</a></li>
-                              <li class="paginate_button page-item "><a href="#" aria-controls="datatables" data-dt-idx="5" tabindex="0" class="page-link">4</a></li><li class="paginate_button page-item next" id="datatables_next"><a href="#" aria-controls="datatables" data-dt-idx="6" tabindex="0" class="page-link">Next</a></li>
-                              <li class="paginate_button page-item last" id="datatables_last"><a href="#" aria-controls="datatables" data-dt-idx="7" tabindex="0" class="page-link">Last</a></li></ul></div></div></div></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 

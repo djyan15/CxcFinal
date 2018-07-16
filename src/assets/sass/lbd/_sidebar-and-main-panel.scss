@@ -7,7 +7,7 @@ body > .navbar-collapse{
     width: 260px;
     display: block;
     z-index: 1;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.082);
     font-weight: 200;
     background-size: cover;
     background-position: center center;
@@ -273,7 +273,7 @@ body > .navbar-collapse{
     }
 
     > .footer{
-        border-top: 1px solid #e7e7e7;
+        border-top: 1px solid #e7e7e718;
     }
 
     .navbar{
@@ -303,7 +303,7 @@ body > .navbar-collapse{
             @include transform-translate-3d-0(-5%);
             border-radius: 10px;
             li.adjustments-line{
-                border-bottom: 1px solid #ddd;
+                border-bottom: 1px solid rgba(221, 221, 221, 0.103);
             }
             li{
                 padding: 5px 2px !important;
@@ -359,8 +359,8 @@ body > .navbar-collapse{
 
 .fixed-plugin .dropdown-menu:after{
     border-bottom: 16px solid rgba(0, 0, 0, 0);
-    border-left: 16px solid #fff;
-    border-top: 16px solid rgba(0,0,0,0);
+    border-left: 16px solid rgb(97, 93, 93);
+    border-top: 16px solid rgba(0, 0, 0, 0.034);
     right: -15px;
 }
 

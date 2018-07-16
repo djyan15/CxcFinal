@@ -13,6 +13,7 @@ import { TipoDocumentoComponent } from './tipo-documento/tipo-documento.componen
 import { TipoDocumentoListComponent } from './tipo-documento-list/tipo-documento-list.component';
 import { TransaccionesComponent } from './transacciones/transacciones.component';
 import { TransaccionesListComponent } from './transacciones-list/transacciones-list.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -21,13 +22,14 @@ import { TransaccionesListComponent } from './transacciones-list/transacciones-l
       TipoDocumentoComponent,
       TipoDocumentoListComponent,
       TransaccionesComponent,
-      TransaccionesListComponent
+      TransaccionesListComponent,
+      DashboardComponent
 
     //  ModalUploadComponent,
 
   ],
   exports: [
-
+    DashboardComponent
   ],
   imports: [
     PAGES_ROUTES,

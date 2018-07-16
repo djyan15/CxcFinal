@@ -1,96 +1,89 @@
-<div class="card ">
-  <div class="card-header ">
-      <h4 class="card-title"  style="color:rgb(21, 31, 23)">Transacciones</h4>
-  </div>
-  <div class="card-body ">
-      <form method="get" action="/" class="form-horizontal">
-          <fieldset>
-                  <div class="form-group">
-                    <div class="row">
-                      <label for="IDTipoDocumento"  class="col-sm-2 control-label">Tipo Documento </label>
-                      <div class="col-sm-10">
-                      <select class="form-control" id="IDTipoDocumento">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
+<br>
+<br>
+<br>
+<div class="design">
+<div class="card">
+    <div class="header">
+        <h4><strong style='padding-left: 20em'>Transacciones</strong> </h4>
+    </div>
+    <div class="body">
+        <!-- <h2 class="card-inside-title">Nombre</h2> -->
+
+        <div class="row clearfix">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label for="IDTipoDocumento"  class="col-sm-2 control-label"> <b>Tipo de Movimiento</b> </label>
+                    <!-- <input type="text" class="form-control" placeholder="Tipo Documento"> -->
+                     <select class="form-control" id="IDTipoDocumento">
+                       <option>Seleccionar un Tipo de Movimiento</option>
+                        <option>DB</option>
+                        <option>CR</option>
                       </select>
-                    </div>
-                    </div>
-                  </div>
-                  <!-- <div class="row">
-                      <label class="col-sm-2 control-label">Tipo Documento</label>
-                      <div class="col-sm-10">
-                          <input type="text" placeholder="Tipo Documento" class="form-control">
-                      </div>
-                  </div> -->
-          </fieldset>
-          <!-- <fieldset>
-              <div class="form-group">
-                  <div class="row">
-                      <label class="col-sm-2 control-label">Tipo Documento </label>
-                      <div class="col-sm-10">
-                          <input type="password" placeholder="ID Tipo Documento" name="password" class="form-control">
-                      </div>
-                  </div>
-              </div>
-          </fieldset> -->
-          <fieldset>
-              <div class="form-group">
-                  <div class="row">
-                      <label class="col-sm-2 control-label">Numero Documento</label>
-                      <div class="col-sm-10">
-                          <input type="text" placeholder="Numero Documento" class="form-control">
-                      </div>
-                  </div>
-              </div>
-          </fieldset>
-          <fieldset>
-            <div class="form-group">
-                <div class="row">
-                    <label class="col-sm-2 control-label">Fecha</label>
-                    <div class="col-sm-10">
-                        <input type="text" placeholder="Fecha" class="form-control">
-                    </div>
-                </div>
-            </div>
-        </fieldset>
-        <fieldset>
-            <div class="form-group">
-                <div class="row">
-                  <label for="IDCliente"  class="col-sm-2 control-label">Cliente </label>
-                  <div class="col-sm-10">
-                  <select class="form-control" id="IDCliente">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                  </select>
-                </div>
-                </div>
-              </div>
-      </fieldset>
-      <fieldset>
-        <div class="form-group">
-            <div class="row">
-                <label class="col-sm-2 control-label">Monto</label>
-                <div class="col-sm-10">
-                    <input type="text" placeholder="Monto" class="form-control">
                 </div>
             </div>
         </div>
-    </fieldset>
-          <fieldset>
-            <div class="trans">
-              <button type="submit" class="btn btn-success btn-fill btn-wd ">Guardar</button>
-            </div>
-          </fieldset>
-      </form>
-  </div>
 
+        <div class="row clearfix">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label for="IDTipoDocumento"  class="col-sm-2 control-label"><b>Tipo Documento</b></label>
+                    <!-- <input type="text" class="form-control" placeholder="Tipo Documento"> -->
+                     <select class="form-control" id="IDTipoDocumento">
+                        <option>Seleccionar un Tipo de Documento</option>
+                        <option>Recibo de caja</option>
+                        <option>comprobante de pago</option>
+                        <option>comprobante de devolución</option>
+                        <option>consignaciones</option>
+                        <option>letras de cambio</option>
+                        <option>factura de compra</option>
+                      </select>
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label class="col-sm-2 control-label"><b>Número de Documento</b></label>
+                    <input type="text" class="form-control" placeholder="Ex: 0058">
+                </div>
+            </div>
+        </div>
+        <div> <b style='padding-left: 1em'>Fecha</b>
+          <div class="input-group">
+              <span class="input-group-addon"><i class="zmdi zmdi-calendar"></i> </span>
+              <input type="text" class="form-control date" placeholder="Ex: 30/07/2016">
+          </div>
+      </div>
+      <div class="row clearfix">
+          <div class="col-sm-12">
+              <div class="form-group">
+                  <label for="IDCliente"  class="col-sm-2 control-label"><b>Cliente</b> </label>
+                  <select class="form-control" id="IDCliente">
+                     <option>Seleccionar un cliente</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+              </div>
+          </div>
+      </div>
+      <div> <b style='padding-left: 1em'>Monto</b>
+        <div class="input-group">
+            <span class="input-group-addon"><i class="zmdi zmdi-money"></i></span>
+            <input type="text" class="form-control money-dollar" placeholder="Ex: 99,99 $">
+        </div>
+    </div>
+
+        <fieldset style='padding-left: 83em'>
+            <button type="button" class="btn btn-raised btn-success btn-round "><i class="fa fa-floppy-o" aria-hidden="true"></i> Guardar</button>
+            <button type="button" class="btn btn-raised btn-danger btn-round "><i class="fa fa-times" aria-hidden="true"></i> Cancelar</button>
+        </fieldset>
+
+
+    </div>
 </div>
+</div>
+
 
 
 
